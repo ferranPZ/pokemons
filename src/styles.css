@@ -1,0 +1,292 @@
+* {
+  margin: 0px;
+}
+
+nav {
+  height: 68px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 2px solid rgba(0, 0, 0, 0.04);
+  -webkit-background-clip: padding-box; /* for Safari */
+  background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+}
+
+.navbar-logo {
+  padding: 5px 5px 5px;
+  width: 65px;
+}
+
+.searchbar-container {
+  padding-left: 0px;
+  margin: 30px auto;
+  padding: 0 0px;
+  align-items: center;
+}
+
+.searchbar {
+  background: white;
+}
+
+.searchbar input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 3px;
+  border: none;
+  margin-bottom: 30px;
+
+  opacity: 0.6;
+  filter: drop-shadow(0px 0px 2px rgba(0, 0, 0, 0.8));
+}
+
+.searchbar input:focus {
+  outline: none;
+}
+
+.searchbar-btn button {
+  background-color: #ff5000;
+  border: none;
+  border-radius: 80px;
+  color: white;
+  padding: 10px 12px;
+  margin-right: 10px;
+}
+
+.searchbar-btn div {
+  display: inline;
+}
+.drop {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.pokedex-grid {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  grid-auto-columns: repeat(3, 1fr);
+  grid-gap: 18px;
+}
+
+.pokemon-card {
+  display: flex;
+  width: 470.21px;
+  height: 113.17px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 10px 10px 10px;
+  flex: 1;
+}
+
+.card-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.card-top h4 {
+  text-transform: capitalize;
+}
+
+.pokemon-img-container {
+  padding: 0px 10px;
+  white-space: nowrap;
+}
+
+.background-text {
+  position: absolute;
+  z-index: 1;
+  text-overflow: ellipsis;
+  white-space: wrap;
+}
+
+.pokemon-img {
+  z-index: 2;
+  position: relative;
+  width: 90px;
+  height: 90px;
+  margin-right: 10px;
+}
+
+.fire {
+  background-color: #ffa9a3;
+  color: #ffa9a3;
+  font-size: 50px;
+}
+
+.grass {
+  background-color: #c8f9d9;
+}
+.normal {
+  background-color: #ecdbd5;
+}
+.fighting {
+  background-color: #fec3cd;
+}
+.water {
+  background-color: #b9e6ff;
+}
+.flying {
+  background-color: #e4c2ff;
+}
+.poison {
+  background-color: #d6b8f4;
+}
+.electric {
+  background-color: #ffe7ad;
+}
+.ground {
+  background-color: #e6d0c7;
+}
+.psychic {
+  background-color: #fac7d3;
+}
+.rock {
+  background-color: #dadbe7;
+}
+.ice {
+  background-color: #b9e6ff;
+}
+.bug {
+  background-color: #c2fef1;
+}
+.dragon {
+  background-color: #D7B4F9(55, 0, 128);
+}
+.ghost {
+  background-color: #E5D6FF(66, 46, 88);
+}
+.dark {
+  background-color: #ebebea;
+}
+.steel {
+  background-color: #e7eaee;
+}
+.fairy {
+  background-color: #fac7e6;
+}
+.unknown {
+  background-color: #C2FFF7(0, 128, 90);
+}
+
+.pokemon-type {
+  display: flex;
+}
+
+.pokemon-type-text {
+  margin-right: 10px;
+  text-transform: capitalize;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.card-bottom {
+  display: flex;
+  flex-direction: rowl;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.pagination {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.pokemon-id {
+  padding-right: 12px;
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.pokemon-favorite img {
+  width: 30px;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 0px 18px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  flex-direction: row;
+  height: 90px;
+  margin-bottom: 30px;
+}
+
+.pokemon-btn {
+  background: transparent;
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+button:hover {
+  box-shadow: 0px 0px 0px transparent;
+  border: 0px solid transparent;
+  text-shadow: 0px 0px 0px transparent;
+}
+
+.pokemon-btn:active {
+  outline: none;
+  border: none;
+}
+
+.pokemon-btn:focus {
+  outline: 0;
+}
+
+.btn-pagination {
+  background-color: #ff5000;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  marigin: 13px 3px 3px 3px;
+}
+
+.pages {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.notFound {
+  text-align: center;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+
+  animation-name: spin;
+  animation-duration: 5000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  /* transform: rotate(3deg); */
+  /* transform: rotate(0.3rad);/ */
+  /* transform: rotate(3grad); */
+  /* transform: rotate(.03turn);  */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.App {
+  font-family: sans-serif;
+}
